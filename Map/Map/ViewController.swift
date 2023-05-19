@@ -14,39 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         uploadButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-//        yourButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        
-//        uploadButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-    }
-
-//    func postLocation() {
-//        let parameters = "{\n    \"m2m:cin\": {\n        \"con\": \"36.769794975534516,126.9323220669489\"\n    }\n}"
-//        let postData = parameters.data(using: .utf8)
-//
-//        var request = URLRequest(url: URL(string: "http://203.253.128.177:7579/Mobius/zz/Map")!,timeoutInterval: Double.infinity)
-//        request.addValue("application/json", forHTTPHeaderField: "Accept")
-//        request.addValue("12345", forHTTPHeaderField: "X-M2M-RI")
-//        request.addValue("Sx2AhUKtTeH", forHTTPHeaderField: "X-M2M-Origin")
-//        request.addValue("application/vnd.onem2m-res+json; ty=4", forHTTPHeaderField: "Content-Type")
-//
-//        request.httpMethod = "POST"
-//        request.httpBody = postData
-//
-//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//          guard let data = data else {
-//            print(String(describing: error))
-//            return
-//          }
-//          print(String(data: data, encoding: .utf8)!)
-//        }
-//
-//        task.resume()
-//
-//    }
-//
-//    @objc func buttonTapped() {
-//        postLocation()
-//    }
 
     @objc func buttonTapped() {
         fetchCinValueFromMobiusServer()
