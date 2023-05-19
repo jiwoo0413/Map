@@ -56,7 +56,6 @@
 		74C04C922A1348DF001EC2F5 /* MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C04C962A1348DF001EC2F5 /* MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUITests.swift; sourceTree = "<group>"; };
 		74C04C982A1348DF001EC2F5 /* MapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		74C04CA62A136D66001EC2F5 /* Kakao-map-bring-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-map-bring-header.h"; sourceTree = "<group>"; };
 		74C04CAA2A13795E001EC2F5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		74C04CAC2A13797D001EC2F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		74C04CAE2A13798C001EC2F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -101,7 +100,6 @@
 		74C04C692A1348DD001EC2F5 = {
 			isa = PBXGroup;
 			children = (
-				74C04CA62A136D66001EC2F5 /* Kakao-map-bring-header.h */,
 				74C04C742A1348DD001EC2F5 /* Map */,
 				74C04C8B2A1348DF001EC2F5 /* MapTests */,
 				74C04C952A1348DF001EC2F5 /* MapUITests */,
@@ -475,7 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5G5379QU3C;
+				DEVELOPMENT_TEAM = 8RN9H3Z673;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Map/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,7 +502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5G5379QU3C;
+				DEVELOPMENT_TEAM = 8RN9H3Z673;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Map/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -533,7 +531,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5G5379QU3C;
+				DEVELOPMENT_TEAM = 8RN9H3Z673;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -553,7 +551,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5G5379QU3C;
+				DEVELOPMENT_TEAM = 8RN9H3Z673;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -572,7 +570,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5G5379QU3C;
+				DEVELOPMENT_TEAM = 8RN9H3Z673;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiwoo.MapUITests;
@@ -590,7 +588,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5G5379QU3C;
+				DEVELOPMENT_TEAM = 8RN9H3Z673;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiwoo.MapUITests;

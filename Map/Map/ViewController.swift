@@ -53,8 +53,14 @@ class ViewController: UIViewController {
     }
     
     func fetchCinValueFromMobiusServer() {
-        let url = URL(string: "http://203.253.128.177:7579/Mobius/zz/Map")!
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        var request = URLRequest(url: URL(string: "http://203.253.128.177:7579/Mobius/zz/Map/latest")!,timeoutInterval: Double.infinity)
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("12345", forHTTPHeaderField: "X-M2M-RI")
+        request.addValue("SOrigin", forHTTPHeaderField: "X-M2M-Origin")
+
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 print("Error: \(error)")
                 DispatchQueue.main.async {
@@ -73,10 +79,12 @@ class ViewController: UIViewController {
             
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                if let cinValue = (json as? [String: Any])?["cin"] as? String {
-                    print("CIN value: \(cinValue)")
+                print(json)
+                if let m2mCin = json as? [String: Any], let cin = m2mCin["m2m:cin"] as? [String: Any] {
+                    let conValue = cin["con"] as? String
+                    print(conValue)
                     DispatchQueue.main.async {
-                        self.openSafari(with: cinValue)
+                        self.openSafari(with: conValue ?? "N/A")
                     }
                 } else {
                     print("Invalid JSON format or missing 'cin' key")
